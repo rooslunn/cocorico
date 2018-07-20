@@ -27,15 +27,18 @@ class LoadListingCategoryData extends AbstractFixture implements OrderedFixtureI
         $category = new ListingCategory();
         $category->translate('en')->setName('Category1');
         $category->translate('fr')->setName('Categorie1');
+        $category->translate('de')->setName('Kategorie1');
 
         $subCategory1 = new ListingCategory();
         $subCategory1->translate('en')->setName('Category1_1');
         $subCategory1->translate('fr')->setName('Categorie1_1');
+        $subCategory1->translate('de')->setName('Kategorie1_1');
         $subCategory1->setParent($category);
 
         $subCategory2 = new ListingCategory();
         $subCategory2->translate('en')->setName('Category1_2');
         $subCategory2->translate('fr')->setName('Categorie1_2');
+        $subCategory2->translate('de')->setName('Kategorie1_2');
         $subCategory2->setParent($category);
 
 
